@@ -7,13 +7,28 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-    }
-    @Test
+@Test
 public void testAppReternHelloWorld() {
 App classUnderTest = new App();
 assertEquals("Hello World!", classUnderTest.getGreeting());
 }
+
+@Test
+public void testAppReternAverage() {
+App classUnderTest = new App();
+assertEquals("Sum of 2 and 3 is 5. Average is 2.5.", classUnderTest.getAverage());
+}
+
+@Test
+public void testAppReternTotal() {
+App classUnderTest = new App();
+assertEquals("Sum of 1 and 10 is 55. Average is 5.5.", classUnderTest.getTotal());
+}
+
+@Test
+public void testAppReternOddeven() {
+App classUnderTest = new App();
+assertEquals("Sum of odd of 1 to 10 is 25. Sum of even is 30.", classUnderTest.getOddeven());
+}
+
 }

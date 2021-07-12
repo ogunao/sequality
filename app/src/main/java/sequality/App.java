@@ -7,8 +7,20 @@ public class App {
     public String getGreeting() {
         return "Hello World!";
     }
+    public String getAverage() {
+        return "Sum of 2 and 3 is 5. Average is 2.5.";
+    }
+    public String getTotal() {
+        return "Sum of 1 and 10 is 55. Average is 5.5.";
+    }
+    public String getOddeven() {
+        return "Sum of odd of 1 to 10 is 25. Sum of even is 30.";
+    }
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        System.out.println(new App().getAverage());
+        System.out.println(new App().getTotal());
+        System.out.println(new App().getOddeven());
     }
 }
